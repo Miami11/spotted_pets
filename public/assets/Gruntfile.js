@@ -7,7 +7,7 @@ module.exports = function(grunt) {
                 tasks: ['sass']
             },
             html: {
-                files: ['*.html'],
+                files: ['../../templates/*.html'],
                 task: ['watchTask']
             }
         },
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
                 options: {
                     watchTask: true,
                     server: {
-                        baseDir: './',
+                        baseDir: '../../templates/.',
                         index: 'index.html'
                     }
                 }
