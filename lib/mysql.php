@@ -18,7 +18,7 @@ function getDB()
             'database_name' => 'foodie',
             'server' => 'localhost',
             'username' => 'root',
-            'password' => 'fzwV9d4G',
+            'password' => 'root',
             'charset' => 'utf8'
         ]);
     }
