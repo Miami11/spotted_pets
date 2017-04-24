@@ -35,6 +35,10 @@ $app->get('/', function ($request, $response, $args){
     return controller('home',$this)->run();
 });
 
+$app->get('/dog', function ($request, $response, $args){
+    return controller('dog',$this)->run();
+});
+
 $app->get('/admin', function ($request, $response, $args) {
     return controller('admin',$this)->run();
 });
