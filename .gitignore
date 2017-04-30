@@ -1,3 +1,4 @@
 /vendor/
 .idea/
 public/assets/node_modules
+public/storge/*

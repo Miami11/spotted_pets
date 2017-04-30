@@ -16,12 +16,10 @@ class homeController
 
     function run()
     {
-        $json = "{ \"product_cat\": [ { \"pro_no\": \"cat10001\", \"pro_name\": \"貓砂盆\", \"pro_info\": \"給貓咪最好的禮物\", \"pro_score\": 1, \"pro_pic\": \"product1\" }, { \"pro_no\": \"cat10001\", \"pro_name\": \"貓砂盆\", \"pro_info\": \"給貓咪最好的禮物\", \"pro_score\": 1, \"pro_pic\": \"product1\" } ] }";
 
-        $json = json_decode($json,true)['product_cat'];
-        //$db = getDB();
-
-        $this->response = $this->view->render($this->response, 'index.twig' ,['data'=>$json]);
+        $mysql_fake_data = json_decode("[ { \"pro_no\": \"C0001\", \"pro_name\": \"卡涼多功能寵物墊 散熱墊 椅墊(小型寵用)\", \"pro_pic\": \"C0001.jpg\", \"pro_price\": \"500\", \"pro_score\": 4 }, { \"pro_no\": \"C0002\", \"pro_name\": \"日本IRIS《除貓砂踏墊》NO-550\", \"pro_pic\": \"C0002.jpg\", \"pro_price\": \"699\", \"pro_score\": 5 } ]",true);
+        $db = getDB();
+        $this->response = $this->view->render($this->response, 'index.twig',['data'=>$mysql_fake_data]);
         return $this->response;
     }
 }
