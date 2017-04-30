@@ -626,7 +626,7 @@
                                         <button class="product-btn" type="button" data-toggle="tooltip" title=""
                                                 onclick=""
                                                 data-original-title="Add to Wish List"><i
-                                                    class="fl-chapps-heart271"></i></button>
+                                          ｗ          class="fl-chapps-heart271"></i></button>
                                         <button class="product-btn hidden" type="button" data-toggle="tooltip" title=""
                                                 onclick=""
                                                 data-original-title="Compare this Product"><i
@@ -650,6 +650,9 @@
                                         <div class="product-options form-horizontal">
                                             <div class="options">
                                                 <a class="ajax-overlay_close" href="/assets/file/saved_resource"></a>
+
+                                                echo $twig->render('Hello{{ name }}!',array('name' => 'John'));
+
                                                 <h3>Available Options</h3>
 
                                                 <div class="form-group hidden">
